@@ -1,0 +1,114 @@
+body
+{
+    background-color: gray;
+    transition: all 0.5s ease-in;
+    overflow-x: hidden;
+}
+
+@keyframes smoothInLeft {
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+ }
+ @keyframes smoothInRight {
+    0%{
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+ }
+
+header{
+    
+    align-items: center;
+    animation-name: smoothInLeft;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:blanchedalmond;
+}
+
+#headerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    user-select: none;
+    transition: all 0.2s;
+}
+.title:hover{
+    
+    transform: translateX(10px);
+    cursor: pointer;
+}
+
+.mainContent{
+    padding-top: 10px;
+    animation-name: smoothInRight;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    border-radius: 20px;
+    border: none;
+    padding-left: 20px;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    background-color:rgb(201, 184, 159);
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+}
+
+#headerTitle{
+    width: 14%;
+}
+
+.headerButton{
+    border-radius: 20px;
+    background-color: antiquewhite;
+    border: 2px solid gray;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 10px;
+    user-select: none;
+    transition: all 0.2s;
+}
+.headerButton:hover{
+    cursor: pointer;
+    background-color: cadetblue;
+}
+
+.text{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-self: center;
+    text-align: center;
+}
+
+.Buttons{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 15px;
+}
