@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Stuff</title>
+</head>
+
+<body>
+    <div id="infoDiv">
+
+    </div>
+    <!-- Header -->
+    <header>
+        <!-- Title -->
+        <div id="headerContainer">
+            <div id="headerTitle">
+                <h1 class="title">JavaScript Stuff</h1>
+            </div>
+
+            <div class="Buttons">
+                <div class="headerButton" onclick="windowSwitcher(1)">
+                    <p class="text">Page 1</p>
+                </div>
+                <div class="headerButton" onclick="windowSwitcher(2)">
+                    <p class="text">Page 2</p>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- Content -->
+    <div class="mainContent">
+        <div class="subTitle">
+            <h1 class="titleH1 text">Weather:</h1>
+            <div class="underline"></div>
+        </div>
+
+        <div class="WI">
+            <input id="Input" type="text" placeholder="Write the name of the city">
+            <button onclick="makeWeatherCall(document.getElementById('Input').value)" class="button">
+                <p class="text">
+                    Get weather statistics
+                </p>
+            </button>
+        </div>
+        <li id="WeatherInformation" style="list-style: none;">
+
+        </li>
+    </div>
+</body>
+
+<script src="js2.js"></script>
+<script src="main.js"></script>
+
+</html>

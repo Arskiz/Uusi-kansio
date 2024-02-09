@@ -1,6 +1,6 @@
 body
 {
-    background-color: gray;
+    background-color: #2A4D14;
     transition: all 0.5s ease-in;
     overflow-x: hidden;
 }
@@ -27,7 +27,6 @@ body
  }
 
 header{
-    
     align-items: center;
     animation-name: smoothInLeft;
     animation-duration: 1s;
@@ -37,7 +36,9 @@ header{
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    background-color:blanchedalmond;
+    background-color:#317B22;
+    border: 3px solid black;
+    box-shadow: 0px 0px 10px black;
 }
 
 #headerContainer{
@@ -47,11 +48,16 @@ header{
 }
 
 .title{
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 2px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 30px;
     user-select: none;
     transition: all 0.2s;
+    text-wrap:pretty;
+    color: whitesmoke;
 }
+
 .title:hover{
     
     transform: translateX(10px);
@@ -65,37 +71,50 @@ header{
     animation-delay: 0s;
     border-radius: 20px;
     border: none;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-top: 5px;
     padding-bottom: 10px;
-    background-color:rgb(201, 184, 159);
+    background-color:#67E0A3;
+    border: 3px solid black;
+    box-shadow: 0px 0px 10px black;
 }
 
 .underline{
     width: 100%;
-    height: 5px;
+    height: 2px;
     border: none;
     border-radius: 20px;
     background-color: black;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px black;
 }
 
 #headerTitle{
     width: 14%;
 }
 
+.titleH1{
+    color: whitesmoke;
+    -webkit-text-stroke: black 1px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .headerButton{
     border-radius: 20px;
-    background-color: antiquewhite;
-    border: 2px solid gray;
+    background-color: #7CF0BD;
+    border: 2px solid black;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: 10px;
     user-select: none;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 .headerButton:hover{
     cursor: pointer;
-    background-color: cadetblue;
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .text{
@@ -103,6 +122,11 @@ header{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     align-self: center;
     text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 25px;
+    -webkit-text-stroke: black;
+    -webkit-text-stroke-width: 1px;
 }
 
 .Buttons{
@@ -111,4 +135,122 @@ header{
     flex-direction: row;
     justify-content: space-between;
     margin-right: 15px;
+}
+
+.clockDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#clocker{
+    color: greenyellow;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    user-select: none;
+    transition: all 0.3s ease-in-out;
+}
+#clocker:hover{
+    color: aquamarine;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.button{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #00ff80;
+    border-radius: 20px;
+    border: 2px solid black;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover{
+    background-color: rgb(255, 93, 93);
+    cursor: pointer;
+}
+
+.buttonText{
+    color: rgb(255, 93, 93);
+    font-weight: 1000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.nextTo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+#todoDiv{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+#todoList{
+    margin-top: 10px;
+    list-style: none;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+}
+
+#Input{
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 70%;
+    height: 80px;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: black;
+}
+
+.infoDiv{
+    position: fixed;
+    z-index: 999;
+    top: 2%;
+    right: 1%;
+    left: 85%;
+    bottom: 80%;
+    background-color: rgb(255, 112, 112);
+    border: 4px solid black;
+    border-radius: 20px;
+    transition: all 0.4s ease-in-out;
+    animation-name: infoDiv;
+    animation-duration: 0.4s;
+    animation-delay: 0s;
+}
+
+@keyframes infoDiv{
+    0%{
+        transform: translateX(150px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+#WeatherInformation{
+    transition: all 0.5s ease-in-out;
+}
+
+.weatherInfoDivInner{
+    border: 3px solid black;
+    box-shadow: 0px 0px 10px black;
+    background-color: rgba(0,0,0,0.3); border-radius: 10px; padding-top:10px; padding-bottom:10px;
+}
+.WI
+{
+    background-color: rgba(0, 0, 0, 0.3); border-radius: 20px; padding-left: 10px; padding-right: 10px; display: flex; flex-direction: row; justify-content: space-between; align-items: center;
 }

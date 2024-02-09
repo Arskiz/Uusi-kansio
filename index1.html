@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript juttuja</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Title -->
+        <div id="headerContainer">
+            <div id="headerTitle">
+                <h1 class="title">JavaScript Stuff</h1>
+            </div>
+
+            <div class="Buttons">
+                <div class="headerButton" onclick="windowSwitcher(1)">
+                    <p class="text">Page 1</p>
+                </div>
+                <div class="headerButton" onclick="windowSwitcher(2)">
+                    <p class="text">Page 2</p>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!-- Content -->
+    <div class="mainContent">
+        <!-- Tehtävä 1-->
+        <div>
+            <div class="subTitle">
+                <h1 class="titleH1">Js project 1 (kello):</h1>
+            </div>
+            <div class="clockDiv">
+                <h2 class="text">Time is atm:</h2>
+                <h2 class="text" id="clocker"></h2>
+            </div>
+        </div>
+        <!-- Tehtävä 2-->
+        <div>
+            <div class="subTitle">
+                <h1 class="titleH1">Js project 2 (TODO List):</h1>
+            </div>
+            <div id="todoDiv">
+                <div class="nextTo">
+                    <input id="Input" placeholder="Write here the text stuff you want in the list.">
+                    <button class="button" onclick="addToList()">
+                        <p class="buttonText text">Add to list</p>
+                    </button>
+                    <button class="button" onclick="clearList()">
+                        <p class="buttonText text">Clear list</p>
+                    </button>
+                </div>
+                <div class="underline"></div>
+                <ul id="todoList">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js1.js"></script>
+<script src="main.js"></script>
+
+</html>
